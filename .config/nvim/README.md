@@ -1,65 +1,57 @@
-### Davro Development Environment (Nvim DDE)
+<h2 align="center">Neovim PDE - Personalized Development Environment</h2>
 
-# Shortcuts/Mappings
-leader u        undotree
+![image](https://user-images.githubusercontent.com/6580895/199143031-c8975cd8-b71a-415b-9727-3f0fa7753282.png)
 
-**Harpoon**
-leader a        mark.add_file
-ctrl-e          ui.toggle_quick_menu
+<h5 align="center">A neovim configuration base from the vim community</h5>
 
-**Telescope**
-leader ps       Grep
-leader pf       builtin.find_files, {})
-leader vh       builtin.help_tags
-C-p             builtin.git_files
+#### Awesome Plugins that are used
+- **Tabnine** - AI base autocompletion (Pro users supported)
+- **lsp-trouble** - to jumping between lsp warnings
+- **nvim-treesitter** - for accurate syntax highlighting
+- **vim-windowswap** - to swap windows
+- **nvim-telescope** - to preview files while searching
+- **ctrlsf.vim** and **vim-visual-multi** - to find and replace some text with multi-cursor support
+- **vim-easy-align** - (gaip) Easy align texts
+- **Neoclip** - Clipboard
+- **~Laravel~** - Laravel Artisan plugin
 
-**Vim**
-ctrl-w      navigate nvim-tree split/vsplits windows
+#### What's new
+- C# (Omnisharp WIP)
+- Re-add Galaxyline status line
+- Notifications
+- Clipboards!
+- Migrated to Mason (LSP install manager) and Lazy.nvim (Faster loading package manager)
+- Tabnine autocompletion support
+- Update Icon to fix nerd fonts incompatibility
 
+#### Packages Required
+- Neovim 0.9+ (required)
+- ripgrep
+- fd and Chafa - for some reason required by Telescope media files
+- fzf
 
-# Prerequisites
-install [ripgrep](https://github.com/BurntSushi/ripgrep).
+##### Compatible OS
+- Mac and Linux
+- Windows - You have to use your own docker container or equivalent - **I don't have time for windows :p**
 
-For anyone that is interested in my vimrc, i will have a commit log below
-documenting each one of my commits (easy to C-f the change you want to know
-about though i would just suggest `git log -S`).
+#### LSP Auto-install
+* C++ (clang)
+* bash
+* css
+* html
+* json
+* lua
+* intelephense - (Phpactor if not using paid intelephense)
+* python
+* vim
+* yaml
+* vue
+* emmet ls
+* c-sharp
+* TailwindCSS
+* GraphQL
 
-# Install Node
-npm node v20
-
-https://github.com/nodesource/distributions#debinstall
-
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
-sudo apt-get install -y nodejs
-
-# Install Nerd Font
-
-You need to have a patched font installed.
-
-1.) Download a Nerd Font
-2.) Unzip and copy to ~/.fonts
-3.) Run the command fc-cache -fv to manually rebuild the font cache
-
-https://www.nerdfonts.com/
-https://gist.github.com/matthewjberger/7dd7e079f282f8138a9dc3b045ebefa0
-
-# Install Packer
-git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-
-# References
-https://vimdoc.sourceforge.net/htmldoc/motion.html
-https://stackoverflow.com/questions/75906887/file-init-lua-script-in-neovim-not-working
-https://github.com/neovim/neovim/releases/tag/stable?ref=itsfoss.com
-https://github.com/wbthomason/packer.nvim
-https://github.com/nvim-telescope/telescope.nvim
-https://github.com/rose-pine/neovim
-https://github.com/nvim-treesitter/nvim-treesitter
-https://github.com/ThePrimeagen/harpoon
-https://github.com/VonHeikemen/lsp-zero.nvim
-https://github.com/nvim-tree/nvim-tree.lua
-https://github.com/akinsho/bufferline.nvim
-
-# Based on the ThePrimeagen
-https://github.com/ThePrimeagen/init.lua
-
+#### TODO
+* Improve Keybindings along the way
+* Formatters for various web frameworks
 

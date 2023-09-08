@@ -118,3 +118,5 @@ fi
 
 alias go='~/workspace/project-golang/go/bin/go'
 alias vim='~/workspace/projects/nvim-linux64/bin/nvim'
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
